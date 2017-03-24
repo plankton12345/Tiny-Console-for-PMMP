@@ -4,21 +4,22 @@
 
 
     <?php
- $fp = fopen("C:/Users/meroe/Desktop/Genisys/server.log", 'r');
+	
+ $pass = fopen("logfilepass", 'r');//ここのlogfilepassをサーバーのlogファイルのパスにする(webサーバーに設置する場合はipも)
  
-// whileで行末までループ処理
-while (!feof($fp)) {
  
-  // fgetsでファイルを読み込み、変数に格納
-  $txt = fgets($fp);
+
+while (!feof($pass)) {
  
-  // ファイルを読み込んだ変数を出力
+
+  $txt = fgets($pass);
+ 
+
   echo $txt.'<br>';
  
 }
  
-// fcloseでファイルを閉じる
-fclose($fp);  ?><br>
+fclose($pass);  ?><br>
 <meta http-equiv="refresh" content="5; url=log.php">          
     </body>
 </html>
