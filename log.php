@@ -6,7 +6,7 @@
     <?php
 	$pathfileini = parse_ini_file("config.ini");
         
- $path = fopen("$pathfileini[logfile_path]", 'r');//ここのlogfilepassをサーバーのlogファイルのパスにする(webサーバーに設置する場合はipも)
+ $path = fopen("$pathfileini[logfile_path]", 'r');
  
  
 
@@ -21,6 +21,6 @@ while (!feof($path)) {
 }
  
 fclose($path);  ?><br>
- <meta http-equiv="refresh" content="5; url=log.php">          
+ <meta http-equiv="refresh" content="3; url=log.php">          
     </body>
 </html>

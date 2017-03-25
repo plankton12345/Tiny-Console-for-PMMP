@@ -1,6 +1,6 @@
 <div class="container">
       <form class="form-signin" role="form" action="index.php" method="POST">
-        <h2 class="form-signin-heading">Web RCON</h2>
+        <h2 class="form-signin-heading">RconConsole</h2>
 <?php
 if(!empty($_POST)){
   if(empty($_POST['s']) || empty($_POST['p']) || empty($_POST['port'])) echo fail("All fields are required.");
@@ -21,10 +21,10 @@ catch( Exception $e ){
     }
   }
 ?>
-        <input type="text" class="form-control" placeholder="Hostname"  autofocus="" name="s" required="">
+        <input type="text" class="form-control" placeholder="HOSTIP"  autofocus="" name="s" required="">
         <input type="text" class="form-control" placeholder="Port" required="" value="19132" name="port">
         <input type="password" class="form-control" placeholder="Password" required="" name="p">
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Connect Now</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">接続</button>
       </form>
 
     </div>
