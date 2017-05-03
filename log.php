@@ -21,6 +21,6 @@ while (!feof($path)) {
 }
  
 fclose($path);  ?><br>
- <meta http-equiv="refresh" content="3; url=log.php">          
+ <meta http-equiv="refresh" content="2; url=log.php">          
     </body>
 </html>

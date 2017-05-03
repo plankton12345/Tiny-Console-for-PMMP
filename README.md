@@ -19,7 +19,7 @@ config.iniファイルにサーバーのlogファイルのpathを記述
 # バージョン情報
 
 plugin 0.1.3
-Remote Console 1.2.5
-Log Loader 0.5
+Remote Console 1.2.6
+Log Loader 0.6
 LICENCE 1.1
 Readme 1.3
